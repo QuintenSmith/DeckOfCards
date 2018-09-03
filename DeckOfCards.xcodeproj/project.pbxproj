@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1CE9E54D213D94A10022BE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9E54C213D94A10022BE07 /* AppDelegate.swift */; };
-		1CE9E54F213D94A10022BE07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9E54E213D94A10022BE07 /* ViewController.swift */; };
 		1CE9E552213D94A10022BE07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE9E550213D94A10022BE07 /* Main.storyboard */; };
 		1CE9E555213D94A10022BE07 /* DeckOfCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CE9E553213D94A10022BE07 /* DeckOfCards.xcdatamodeld */; };
 		1CE9E557213D94A30022BE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE9E556213D94A30022BE07 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		1CE9E549213D94A10022BE07 /* DeckOfCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE9E54C213D94A10022BE07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1CE9E54E213D94A10022BE07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1CE9E551213D94A10022BE07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CE9E554213D94A10022BE07 /* DeckOfCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeckOfCards.xcdatamodel; sourceTree = "<group>"; };
 		1CE9E556213D94A30022BE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,15 +54,54 @@
 		1CE9E54B213D94A10022BE07 /* DeckOfCards */ = {
 			isa = PBXGroup;
 			children = (
+				1CE9E565213D9A5B0022BE07 /* View */,
+				1CE9E564213D9A4B0022BE07 /* ModelController */,
+				1CE9E563213D9A360022BE07 /* ViewController */,
+				1CE9E562213D9A2F0022BE07 /* Model */,
+				1CE9E561213D9A260022BE07 /* Resources */,
+			);
+			path = DeckOfCards;
+			sourceTree = "<group>";
+		};
+		1CE9E561213D9A260022BE07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1CE9E54C213D94A10022BE07 /* AppDelegate.swift */,
-				1CE9E54E213D94A10022BE07 /* ViewController.swift */,
-				1CE9E550213D94A10022BE07 /* Main.storyboard */,
 				1CE9E556213D94A30022BE07 /* Assets.xcassets */,
 				1CE9E558213D94A30022BE07 /* LaunchScreen.storyboard */,
 				1CE9E55B213D94A30022BE07 /* Info.plist */,
 				1CE9E553213D94A10022BE07 /* DeckOfCards.xcdatamodeld */,
 			);
-			path = DeckOfCards;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1CE9E562213D9A2F0022BE07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CE9E563213D9A360022BE07 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1CE9E564213D9A4B0022BE07 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		1CE9E565213D9A5B0022BE07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CE9E550213D94A10022BE07 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +176,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CE9E555213D94A10022BE07 /* DeckOfCards.xcdatamodeld in Sources */,
-				1CE9E54F213D94A10022BE07 /* ViewController.swift in Sources */,
 				1CE9E54D213D94A10022BE07 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfCards/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCards/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfCards/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCards/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
